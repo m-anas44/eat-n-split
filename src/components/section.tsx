@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useState, useReducer } from 'react'
+import React, { useEffect, useState } from 'react'
 import { getPassFunction, setArguFunction } from './argument';
 
 const Section = (props: any) => {
@@ -45,14 +45,14 @@ const Section = (props: any) => {
             className='focus:outline-none text-center max-w-[8rem] rounded border border-orange-200 p-1' />
         </div>
         <div className='flex justify-between'>
-          <p className='font-semibold text-gray-700'>{`${props.name}`}'s Expense</p>
+          <p className='font-semibold text-gray-700'>{`${props.name}`} Expense</p>
           <input type="number"
             value={result}
             disabled
             className='focus:outline-none max-w-[8rem] text-center rounded border border-orange-200 p-1' />
         </div>
         <div className='flex justify-between'>
-          <p className='font-semibold text-gray-700'>Who's paying bill</p>
+          <p className='font-semibold text-gray-700'>Who is paying bill</p>
           <select
             onChange={(e: any) => setSelectState(e.target.value)}
             className='focus:outline-none text-center w-[8rem] rounded border border-orange-200 p-1'>
