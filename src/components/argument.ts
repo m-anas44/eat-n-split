@@ -1,7 +1,7 @@
 let passFunctionValue = "";
-let passFunctionId :number;
+let passFunctionId: number;
 
-export function setArguFunction(newValue:string, newId: number) {
+export function setArguFunction(newValue: string, newId: number) {
     passFunctionValue = newValue;
     passFunctionId = newId;
 }

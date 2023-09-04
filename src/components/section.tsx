@@ -3,7 +3,7 @@ import React, { useEffect, useState, useReducer } from 'react'
 import { getPassFunction, setArguFunction } from './argument';
 
 const Section = (props: any) => {
-  
+
   const [inputVal, setInputVal] = useState(0)
   const [inputVal2, setInputVal2] = useState(0)
   const [result, setResult] = useState(0);
@@ -25,7 +25,7 @@ const Section = (props: any) => {
 
     }
   }
- let passID = props.id;
+  let passID = props.id;
   return (
     <div id={props.id}>
       <h2 className='font-bold text-3xl text-gray-600'>Split a bill with {props.name}</h2>
