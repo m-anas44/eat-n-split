@@ -26,6 +26,8 @@ const Section = (props: any) => {
     }
   }
   let passID = props.id;
+
+
   return (
     <div id={props.id}>
       <h2 className='font-bold text-3xl text-gray-600'>Split a bill with {props.name}</h2>
@@ -67,6 +69,7 @@ const Section = (props: any) => {
             setArguFunction(oweVar, passID)
             getPassFunction()
             props.setOpenSection(false)
+            props.addMessage()
           }}
           className='focus:outline-none text-sm w-[8rem] font-semibold ml-auto rounded bg-orange-300 mt-3 py-1'>
           Split Bill

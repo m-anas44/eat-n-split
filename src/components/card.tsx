@@ -16,7 +16,7 @@ const Card = () => {
     ]);
 
     const section = (id: any) => {
-        setOpenSection(!openSection);
+        setOpenSection(!openSection)
         let obj: any = todos.find(item => item.id == id);
         let nameHolder = obj.name;
         return nameHolder;
@@ -47,6 +47,7 @@ const Card = () => {
 
     const passFunctionValue = getPassFunction();
     const passFunctionId = getIdFunction();
+
     return (
         <div className="flex max-w-md md:max-w-4xl flex-wrap md:flex-row mx-auto">
             <div className='flex-1 p-4 bg-slate-50'>
@@ -62,7 +63,7 @@ const Card = () => {
                                     <Image src={pro_pic} alt="Profile" className="w-11 h-11 rounded-full" />
                                     <div>
                                         <span className="font-bold">{item.name}</span>
-                                        <p className="text-xs">{(passFunctionId == item.id) ? [passFunctionValue] : ""} </p>
+                                        <p className="text-xs">{(passFunctionId == item.id) ? [passFunctionValue] : "" }</p>
 
                                     </div>
                                     <button type="button"
